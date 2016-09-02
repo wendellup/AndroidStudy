@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingLeft="5dp">
+
+	<ImageView
+		android:id="@+id/id_icon"
+		android:layout_width="64dp"
+		android:layout_height="64dp"
+		android:layout_gravity="center"
+		android:src="@drawable/ic_launcher"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:orientation="vertical"
+		android:paddingLeft="5dp"
+		android:paddingTop="5dp">
+
+		<TextView
+			android:id="@+id/id_game_name"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:maxLines="1"
+			android:textColor="#000000"
+			android:textSize="18sp"/>
+
+		<TextView
+			android:id="@+id/id_game_intro"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:maxLines="2"
+			android:textColor="#C4C4C4"
+			android:textSize="18sp"/>
+		
+		<ProgressBar
+			android:id="@+id/id_game_down_progressBar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="?android:attr/progressBarStyleHorizontal" />
+		
+		<TextView
+		    android:id="@+id/id_game_down_textView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+		
+		<Button
+		    android:id="@+id/id_game_down_btn"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="下载"
+			android:visibility="gone"/>
+		
+		<Button
+		    android:id="@+id/id_game_install_btn"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="安装"
+			android:visibility="gone"/>
+
+	</LinearLayout>
+
+</LinearLayout>
