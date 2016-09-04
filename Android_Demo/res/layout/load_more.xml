@@ -8,6 +8,7 @@
         android:id="@+id/loadMoreButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="load more"
-        android:onClick="loadMore"/>
+        android:text="load more"/>
+        <!-- android:onClick="loadMore" -->
+        
 </LinearLayout>

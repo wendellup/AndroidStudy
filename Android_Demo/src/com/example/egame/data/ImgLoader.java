@@ -203,9 +203,9 @@ public class ImgLoader {
 	 * @param end
 	 *            结束图片标志
 	 */
-	public void loadImages(int start, int end) {
+	public void loadImages(int start, int end, NewsAdapter newsAdapter) {
 		for (int i = start; i < end; i++) {
-			String url = NewsAdapter.URLS[i];
+			String url = newsAdapter.URLS[i];
 			Bitmap bitmap = getBitmapFromCache(url);
 			if (bitmap == null) {
 				NewsAynsTaskImgView task = new NewsAynsTaskImgView(url);

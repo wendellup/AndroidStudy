@@ -31,7 +31,8 @@ public class NewsAdapter extends BaseAdapter implements
 
 	private int mStart;
 	private int mEnd;
-	public static String[] URLS;
+//	public static String[] URLS;
+	public String[] URLS;
 
 	private boolean mFirstIn;
 	
@@ -115,7 +116,7 @@ public class NewsAdapter extends BaseAdapter implements
 		// 处于停止状态
 		if (scrollState == SCROLL_STATE_IDLE) {
 			// 加载可见项
-			mImgLoader.loadImages(mStart, mEnd);
+			mImgLoader.loadImages(mStart, mEnd, this);
 		} else {
 			// 停止加载
 			mImgLoader.cancelAllTasks();
@@ -134,7 +135,7 @@ public class NewsAdapter extends BaseAdapter implements
 		
 		// 首次加载时 使用的,
 		if (mFirstIn == true && visibleItemCount > 0) {
-			mImgLoader.loadImages(mStart, mEnd);
+			mImgLoader.loadImages(mStart, mEnd, this);
 			mFirstIn = false;
 		}
 	}
