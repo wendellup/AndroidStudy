@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent" 
+    android:orientation="vertical" > 
+    <ListView android:id="@android:id/list"  
+        android:layout_width="match_parent"
+        android:layout_height="0dip"   
+        android:layout_weight="1" /> <!-- 设置layout_height=0dip和layout_weight=1，目的是确保屏幕有足够的地方显示其他控件，本例是确保button出现在屏幕的下方，即时List的items数很多，需要翻屏显示，button也能一直出现在最下方 -->
+      
+    <Button android:id="@+id/ui_listbutton" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="@string/submit" 
+        android:onClick="submitFunc" /> 
+</LinearLayout>

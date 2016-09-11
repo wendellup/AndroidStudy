@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ui_imageItem" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:ellipsize="marquee" />   <!-- 当字符内容太长显示不下时可以省略号代替未显示的字符；省略号可以在显示区域的起始，中间，结束位置，或者以跑马灯的方式显示文字，截图显示的就是marquee方式。  -->
